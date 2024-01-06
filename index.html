@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>freeCodeCamp Survey Form</title>
+    <meta charset ="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email<input id="email" type="email" required placeholder="Enter Your Email"></label>
+        <label id="number-label">Age<input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+        <label for="dropdown">Which option best describes your current role?
+            <select id="dropdown">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset><legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label class="vertical">
+            <input type="radio" value="fitback" name="fitback" class ="inline">Definitely</label>
+        <label class="vertical"><input type="radio" value="fitback" name="fitback" class="inline">Maybe</label>
+
+        <label>What is your favorite feature of freeCodeCamp?
+            <select>
+                <option>a</option>
+                <option>b</option>
+                <option>c</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label class="vertical"><input type="checkbox" value="changes" class="inline">Front-end Projects</label>
+        <label class="vertical"><input type="checkbox" value="changes" class="inline">Back-end Projects</label>
+        <label class="vertical"><input type="checkbox" value="changes" class="inline">Data Visualization</label>
+        <label for="adds">Any comments or suggestions?
+            <textarea id="adds" name="adds" rows="5" cols="40" placeholder="Enter your comments here..."></textarea></label>
+    </fieldset>
+
+    <label for="submit"><input id="submit" type="submit" value="Submit"></label>
+
+
+
+</form>
+</body>
+</html>
